@@ -14,7 +14,7 @@
 "set noguipty
 
 " set the X11 font to use
-" set guifont=-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
+" set guifont=Inconsolata:h14
 
 set ch=2		" Make command line two lines high
 
@@ -65,14 +65,15 @@ if version >= 500
   " highlight Constant gui=NONE guibg=grey95
   " highlight Special gui=NONE guibg=grey95
   set gfn=Inconsolata:h14
+  set guifont="Inconsolata"
   colorscheme ir_black
   set list
-  set transparency=8
   set lines=65
   set columns=150
-  set guioptions=egmrLt
+  set guioptions=egrLt
   set enc=utf-8
   hi LineNr guifg=#333333
   :nmap  :set invnumber
-  set go-=T
+  set go-=mT
+  set transparency=8
 endif
