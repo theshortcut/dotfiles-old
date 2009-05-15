@@ -1,0 +1,1 @@
+/Users/clay/src/vim-rails/plugin/rails.vim

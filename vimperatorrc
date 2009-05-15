@@ -1,0 +1,32 @@
+"2.0 (created: 2009/03/28 23:48:07)
+set guioptions=rbmTB
+set runtimepath=/Users/clay/.vimperator
+colorscheme mac
+
+" make hints a bit easier to turn on.
+map c f
+map C F
+
+" make control-c act like escape
+map <C-c> <ESC>
+imap <c-c> <esc>
+
+" easier acces to location and search bars and making new tab
+map o <M-l>
+map t <M-t>
+map e <M-l><tab>
+
+" we don't like beeps
+se vb
+
+" separation of URL and search
+se ds=
+
+" pass-through on gReader
+:autocmd LocationChange .* :fmapc
+:autocmd LocationChange www\\.google\\.com/reader :fmap! -vkey j k n p m s t v A r S N P X O gh ga gs gt gu u / ?
+
+" just so you know when this file is sucessfully run
+echoe "rc file sourced"
+
+" vim: set ft=vimperator:

@@ -1,0 +1,1 @@
+/Users/clay/src/vim-git/syntax/gitcommit.vim
