@@ -70,10 +70,10 @@ if version >= 500
   set list
   set lines=65
   set columns=150
-  set guioptions=egrLt
+  set guioptions=egmrLTt
   set enc=utf-8
   hi LineNr guifg=#333333
   :nmap  :set invnumber
-  set go-=mT
   set transparency=8
+  set go-=T
 endif
