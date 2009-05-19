@@ -12,7 +12,8 @@ import System.IO
 main = do
     xmproc <- spawnPipe "xmobar"
     xmonad $ defaultConfig
-        { borderWidth = 1
+        { terminal = "uxterm"
+        , borderWidth = 1
         , normalBorderColor = "grey30"
         , focusedBorderColor = "#aecf96"
         , workspaces = ["1:web", "2:dev", "3:comm", "4:misc"]

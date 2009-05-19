@@ -1,8 +1,7 @@
 ## XTERM SETTINGS
-*XTerm*deleteIsDEL:		true
-	xterm*LoginShell:	true
-	xterm*Background:	black
-	xterm*Foreground:	LightBlue4
-	xterm*cursorColor:	LightBlue1
-	xterm*faceName:		Inconsolata
-	xterm*faceSize:		10
+xterm*LoginShell: true
+xterm*Background: black
+xterm*Foreground: LightBlue4
+xterm*cursorColor: LightBlue1
+xterm*faceName: Inconsolata
+xterm*faceSize: 10

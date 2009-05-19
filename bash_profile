@@ -1,5 +1,5 @@
 #PATH
-export PATH="/Users/clay/.cabal/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/Users/clay/src/jruby~main/bin:$PATH"
+export PATH="/Users/clay/.cabal/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 #JRUBY STUFF
 export JRUBY_HOME="/Users/clay/src/jruby~main"
