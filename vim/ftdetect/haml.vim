@@ -1,1 +1,2 @@
-/Users/clay/src/vim-haml/ftdetect/haml.vim
+autocmd BufNewFile,BufRead *.haml setf haml
+autocmd BufNewFile,BufRead *.sass setf sass
