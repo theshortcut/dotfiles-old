@@ -1,0 +1,70 @@
+# prompt stuff
+autoload -U colors zsh/terminfo
+colors
+if [[ -n $SSH_CONNECTION ]]; then
+  export PROMPT='[%{$fg_bold[green]%}%m:%3~%{$reset_color%}]-$(git_info_for_prompt)» '
+else
+  export PROMPT='[%{$fg_bold[green]%}%3~%{$reset_color%}]-$(git_info_for_prompt)» '
+fi
+export RPROMPT="%{$fg[white]%}%D{%H:%M}%{$reset_color%}"
+
+export TERM=screen
+export EDITOR='vim'
+export PATH="~/.cabal/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/Developer/SDKs/flex_sdk/bin:$PATH"
+export MANPATH="/usr/local/man:$MANPATH"
+export USERWM=`which xmonad`
+# export RSYNC_RSH=/usr/bin/ssh
+ 
+fpath=(~/.zsh/functions $fpath)
+ 
+autoload -U ~/.zsh/functions/*(:t)
+ 
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+ 
+setopt NO_BG_NICE # don't nice background tasks
+setopt NO_HUP
+setopt NO_LIST_BEEP
+setopt LOCAL_OPTIONS # allow functions to have local options
+setopt LOCAL_TRAPS # allow functions to have local traps
+setopt HIST_VERIFY
+setopt SHARE_HISTORY # share history between sessions ???
+setopt EXTENDED_HISTORY # add timestamps to history
+setopt PROMPT_SUBST
+setopt CORRECT
+setopt COMPLETE_IN_WORD
+setopt IGNORE_EOF
+ 
+setopt APPEND_HISTORY # adds history
+setopt INC_APPEND_HISTORY SHARE_HISTORY # adds history incrementally and share it across sessions
+setopt HIST_IGNORE_ALL_DUPS # don't record dupes in history
+setopt HIST_REDUCE_BLANKS
+ 
+zle -N newtab
+
+# set window title
+case $TERM in
+  *xterm*|rxvt|rxvt-unicode|rxvt-256color|(dt|k|E|u)term)
+    precmd () { print -Pn "\e]0;$TERM - (%L) [%n@%M]%# [%~]\a" } 
+    preexec () { print -Pn "\e]0;$TERM - (%L) [%n@%M]%# [%~] ($1)\a" }
+  ;;
+  screen)
+  precmd () { 
+    print -Pn "\e]83;title \"$1\"\a" 
+    print -Pn "\e]0;$TERM - (%L) [%n@%M]%# [%~]\a" 
+  }
+  preexec () { 
+    print -Pn "\e]83;title \"$1\"\a" 
+    print -Pn "\e]0;$TERM - (%L) [%n@%M]%# [%~] ($1)\a" 
+  }
+  ;; 
+esac
+
+bindkey '^[^[[D' backward-word
+bindkey '^[^[[C' forward-word
+bindkey '^[[5D' beginning-of-line
+bindkey '^[[5C' end-of-line
+bindkey '^[[3~' delete-char
+bindkey '^[^N' newtab
+bindkey '^?' backward-delete-char

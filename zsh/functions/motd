@@ -1,0 +1,1 @@
+find /usr/share/calendar/calendar.usholiday -exec calendar -f {} \;
