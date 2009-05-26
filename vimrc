@@ -7,6 +7,11 @@ set showcmd
 set incsearch
 set mouse=a
 
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
+
 if has("autocmd")
   filetype plugin indent on
   filetype plugin on
