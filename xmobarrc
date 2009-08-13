@@ -9,8 +9,9 @@ Config { font = "xft:Clean-10"
                     , Run Swap [] 10
                     , Run Date "%a %b %_d %l:%M" "date" 10
                     , Run StdinReader
+                    , Run Battery [] 10
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %cpu% | %memory% * %swap%    <fc=#ee9a00>%date%</fc> | %KTUS%"
+       , template = "%StdinReader% }{ %cpu% | %memory% | <fc=#ee9a00>%date%</fc> | %KTUS% | %battery%"
        }
