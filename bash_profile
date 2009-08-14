@@ -6,6 +6,9 @@ export JRUBY_HOME="/Users/clay/src/jruby~main"
 export JRUBY_RACK_HOME="/Users/clay/src/jruby-rack"
 export GAEJ_HOME="/Users/clay/src/appengine-java-sdk"
 
+#XDG STUFF
+export XDG_DATA_HOME="/Users/clay/.config"
+
 #USERWM
 export USERWM=~/.cabal/bin/xmonad
 
