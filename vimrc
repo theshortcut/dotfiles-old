@@ -29,3 +29,5 @@ if has("autocmd")
 else
   set autoindent
 endif
+
+cmap w!! %!sudo tee > /dev/null %

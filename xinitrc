@@ -11,10 +11,10 @@ xmodmap ~/.Xmodmap
 
 # sessions
 case $1 in
-  xmonad)
-  exec ck-launch-session xmonad
+  kde)
+  exec startkde
   ;;
   *)
-  exec startkde
+  exec ck-launch-session xmonad
   ;;
 esac

@@ -3,5 +3,15 @@ xterm*LoginShell: true
 xterm*Background: black
 xterm*Foreground: LightBlue4
 xterm*cursorColor: LightBlue1
-xterm*faceName: Clean
-xterm*faceSize: 10
+xterm*faceName: Droid Sans Mono
+xterm*faceSize: 7
+
+## URXVT SETTINGS
+URxvt.depth: 32
+URxvt*background: black
+URxvt*foreground: LightBlue4
+URxvt*font: xft:Droid Sans Mono:size=7
+URxvt*urlLauncher: firefox  
+URxvt*scrollBar: false
+URxvt*scrollBar_right: true
+URxvt*scrollColor: #000000

@@ -21,11 +21,11 @@ mylayout = avoidStruts $ tabbed shrinkText defaultTheme ||| tiled ||| Mirror til
 main = do
     xmproc <- spawnPipe "xmobar"
     xmonad $ defaultConfig
-        { terminal = "uxterm"
+        { terminal = "urxvt"
         , borderWidth = 1
         , normalBorderColor = "grey30"
         , focusedBorderColor = "#aecf96"
-        , workspaces = ["1:web", "2:dev", "3:comm", "4:misc"]
+        , workspaces = ["1:term", "2:web", "3:dev", "4:comm", "5:misc"]
         , manageHook = manageDocks <+> manageHook defaultConfig
         , layoutHook = mylayout
         , logHook = dynamicLogWithPP $ xmobarPP

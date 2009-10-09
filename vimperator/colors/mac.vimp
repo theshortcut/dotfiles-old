@@ -1,13 +1,13 @@
-hi StatusLine color: black
-hi StatusLineSecure color: green
-hi StatusLineBroken color: red
+hi StatusLine color: black; font-size: 10px
+hi StatusLineSecure color: green; font-size: 10px
+hi StatusLineBroken color: red; font-size: 10px
 
-hi CompTitle color: #1e46f3; background: white
+hi CompTitle color: #1e46f3; background: white; font-size: 10px
 hi CompTitle>* border-bottom: 1px dashed #1e46f3
 hi GradientLeft background: #1e46f3
 hi CompItem[selected] background: #1e46f3; color: white
 
-hi Hint -append background-color: #1e46f3; color: white; font-size: 12px; font-weight: normal
+hi Hint -append background-color: #1e46f3; color: white; font-size: 10px; font-weight: normal
 hi HintElem -append background-color: #eeeeff; color: black
 hi HintActive -append background-color: #aaaaff; color: black
 

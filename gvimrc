@@ -18,7 +18,7 @@ set enc=utf-8
 hi LineNr guifg=#333333
 :nmap  :set invnumber
 set go-=T
-set gfn=Clean
+set gfn=Droid\ Sans\ Mono\ 8
 
 if has("gui_macvim")
   set transparency=8
