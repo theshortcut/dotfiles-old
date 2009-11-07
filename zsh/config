@@ -1,4 +1,5 @@
-# path
+# rvm
+~/.zshrc if [[ -s /home/clay/.rvm/scripts/rvm ]] ; then source /home/clay/.rvm/scripts/rvm; fi
 
 # prompt stuff
 autoload -U colors zsh/terminfo
