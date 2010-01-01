@@ -8,7 +8,7 @@ set guioptions=egmrLt
 set enc=utf-8
 set gfn=Menlo
 
-colorscheme vividchalk
+colorscheme inkpot
 
 :nmap  :set invnumber
  

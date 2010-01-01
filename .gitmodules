@@ -7,9 +7,6 @@
 [submodule "vimbundles/vim-cucumber"]
 	path = vimbundles/vim-cucumber
 	url = git://github.com/tpope/vim-cucumber.git
-[submodule "vimbundles/vim-vividchalk"]
-	path = vimbundles/vim-vividchalk
-	url = git://github.com/tpope/vim-vividchalk.git
 [submodule "vimbundles/vim-haml"]
 	path = vimbundles/vim-haml
 	url = git://github.com/tpope/vim-haml.git
@@ -34,3 +31,6 @@
 [submodule "vimbundles/snipmate"]
 	path = vimbundles/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
+[submodule "vimbundles/inkpot"]
+	path = vimbundles/inkpot
+	url = git://github.com/ciaranm/inkpot.git
