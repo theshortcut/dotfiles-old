@@ -1,0 +1,4 @@
+require 'autotest/fsevent'
+require 'autotest/growl'
+
+Autotest::Growl::hide_label = true
