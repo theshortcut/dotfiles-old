@@ -17,14 +17,17 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+
+# wine stuff
+alias mkv2vob='/Applications/Darwine/Wine.bundle/Contents/bin/wine ~/.wine/drive_c/Program\ Files/mkv2vob/mkv2vob.exe'
  
 # rails
 alias sc='script/console'
 alias ss='script/server'
 alias sg='script/generate'
-alias a='autotest -rails'
+alias a='autotest'
 alias tlog='tail -f log/development.log'
-alias scaffold='script/generate nifty_scaffold'
+alias scaffold='script/generate scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 
@@ -32,11 +35,11 @@ alias rst='touch tmp/restart.txt'
 alias restartmysql='sudo launchctl unload -w /Library/LaunchDaemons/org.macports.mysql5-devel.plist;sudo launchctl load -w /Library/LaunchDaemons/org.macports.mysql5-devel.plist'
 
 # personal
-alias syncmusic='rsync -Cavvz --progress --delete ~/Music/iTunes\ Music/ clay@192.168.1.99:Music/'
-alias archssh='ssh clay@clei.ath.cx'
-alias archtorrent='sshfs clay@clei.ath.cx:/mnt/torrents /Users/clay/Documents/sshfs-mount/archtorrent -oauto_cache,reconnect,volname=ArchTorrents'
+alias syncmusic='rsync -Cavvz --progress --delete ~/Music/iTunes/iTunes\ Music/ clay@192.168.1.99:Music/'
+alias archssh='ssh clay@192.168.1.99'
+alias archtorrent='sshfs clay@192.168.1.99:/mnt/torrents /Users/clay/Library/Application\ Support/MacFUSE/mounts/archtorrent -oauto_cache,reconnect,volname=ArchTorrents'
 alias cfdotcom='ssh cferris@claytonferris.com'
-alias archmount='sshfs clay@clei.ath.cx:/home/clay /Users/clay/Documents/sshfs-mount/arch -oauto_cache,reconnect,volname=Arch'
+alias archmount='sshfs clay@192.168.1.99:/home/clay /Users/clay/Library/Application\ Support/MacFUSE/mounts/arch -oauto_cache,reconnect,volname=Arch'
 
 # commands starting with % for pasting from web
 alias %=' '

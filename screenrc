@@ -1,5 +1,5 @@
-# Tells screen to launch with bash.
-shell -bash
+# Tells screen to launch with zsh.
+# shell -zsh
  
 # Disables screen's welcome message. I don't care.
 startup_message off

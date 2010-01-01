@@ -6,12 +6,21 @@ set ruler
 set showcmd
 set incsearch
 set mouse=a
+set number
+set background=dark
+set softtabstop=2
+set tabstop=4
+set shiftwidth=2
+set expandtab
+set vb t_vb=
 
+colorscheme inkpot
+ 
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
-
+ 
 if has("autocmd")
   filetype plugin indent on
   filetype plugin on

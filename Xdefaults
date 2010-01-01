@@ -1,7 +1,0 @@
-## XTERM SETTINGS
-xterm*LoginShell: true
-xterm*Background: black
-xterm*Foreground: LightBlue4
-xterm*cursorColor: LightBlue1
-xterm*faceName: Pragmata
-xterm*faceSize: 9

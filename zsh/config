@@ -10,7 +10,7 @@ export RPROMPT="%{$fg[white]%}%D{%H:%M}%{$reset_color%}"
 
 export TERM=screen
 export EDITOR='vim'
-export PATH="~/.cabal/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/Developer/SDKs/flex_sdk_3/bin:$PATH"
+export PATH="~/.cabal/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export USERWM=`which xmonad`
 export XDG_DATA_HOME="$HOME/.config"
