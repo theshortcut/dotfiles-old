@@ -10,6 +10,7 @@ set backspace=indent,eol,start
 set nobackup
 set history=50
 set ruler
+set fdm=indent
 set showcmd
 set incsearch
 set mouse=a
