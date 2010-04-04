@@ -30,7 +30,10 @@
 	url = git://github.com/scrooloose/nerdcommenter.git
 [submodule "vimbundles/snipmate"]
 	path = vimbundles/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
+	url = git@github.com:theshortcut/snipmate.vim.git
 [submodule "vimbundles/inkpot"]
 	path = vimbundles/inkpot
 	url = git://github.com/ciaranm/inkpot.git
+[submodule "vimbundles/snipmate-snippets"]
+	path = vimbundles/snipmate-snippets
+	url = git@github.com:theshortcut/snipmate-snippets.git
