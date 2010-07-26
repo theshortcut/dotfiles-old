@@ -40,6 +40,18 @@ if has("autocmd")
           \ if line("'\"") > 0 && line("'\"") <= line("$") |
           \   exe "normal! g`\"" |
           \ endif
+    au BufWriteCmd *.html,*.css,*.sass,*.scss,*.js :call Refresh_firefox()
+    function! Refresh_firefox()
+      if &modified
+      write
+      silent !echo  'vimYo = content.window.pageYOffset;
+                   \ vimXo = content.window.pageXOffset;
+                   \ BrowserReload();
+                   \ content.window.scrollTo(vimXo,vimYo);
+                   \ repl.quit();'  |
+                   \ nc localhost 4242 2>&1 > /dev/null
+      endif
+    endfunction
   augroup END
 else
   set autoindent

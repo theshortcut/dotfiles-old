@@ -9,6 +9,10 @@ fi
 export RPROMPT="%{$fg[white]%}%D{%H:%M}%{$reset_color%}"
 
 export EDITOR='vim'
+
+export PATH="/usr/local/sbin:$HOME/.cabal/bin:$PATH"
+
+export USERWM=`which xmonad`
  
 fpath=(~/.zsh/functions $fpath)
  
