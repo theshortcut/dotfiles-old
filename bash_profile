@@ -1,6 +1,3 @@
-#PATH
-export PATH="/Users/clay/.cabal/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
-
 #Colored ls
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad

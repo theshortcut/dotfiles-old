@@ -6,7 +6,6 @@ set lines=65
 set columns=150
 set guioptions=egmrLt
 set enc=utf-8
-set gfn=Menlo
 
 colorscheme inkpot
 
