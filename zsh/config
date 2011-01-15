@@ -10,7 +10,7 @@ export RPROMPT="%{$fg[white]%}%D{%H:%M}%{$reset_color%}"
 
 export EDITOR='vim'
 
-export PATH="/usr/local/share/npm/bin:/usr/local/sbin:$HOME/.cabal/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/.cabal/bin:$PATH"
 
 export USERWM=`which xmonad`
  
