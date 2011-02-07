@@ -46,3 +46,12 @@
 [submodule "vimbundles/vim-fugitive"]
 	path = vimbundles/vim-fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+[submodule "vimbundles/vim-coffee-script"]
+	path = vimbundles/vim-coffee-script
+	url = http://github.com/kchmck/vim-coffee-script.git
+[submodule "vimbundles/vim-javascript"]
+	path = vimbundles/vim-javascript
+	url = http://github.com/pangloss/vim-javascript.git
+[submodule "vimbundles/jslint.vim"]
+	path = vimbundles/jslint.vim
+	url = http://github.com/hallettj/jslint.vim.git
