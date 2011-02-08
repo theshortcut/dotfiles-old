@@ -8,6 +8,8 @@ end
 set nocompatible
 set backspace=indent,eol,start
 set nobackup
+set nowritebackup
+set noswapfile
 set history=50
 set ruler
 set fdm=indent
@@ -30,6 +32,8 @@ endif
 if has("autocmd")
   filetype plugin indent on
   filetype plugin on
+  " auto change working dir
+  autocmd BufEnter * lcd %:p:h
   augroup vimrcEx
     au!
     au FileType text setlocal textwidth=78
@@ -40,18 +44,6 @@ if has("autocmd")
           \ if line("'\"") > 0 && line("'\"") <= line("$") |
           \   exe "normal! g`\"" |
           \ endif
-    au BufWriteCmd *.html,*.css,*.sass,*.scss,*.js :call Refresh_firefox()
-    function! Refresh_firefox()
-      if &modified
-      write
-      silent !echo  'vimYo = content.window.pageYOffset;
-                   \ vimXo = content.window.pageXOffset;
-                   \ BrowserReload();
-                   \ content.window.scrollTo(vimXo,vimYo);
-                   \ repl.quit();'  |
-                   \ nc localhost 4242 2>&1 > /dev/null
-      endif
-    endfunction
   augroup END
 else
   set autoindent
