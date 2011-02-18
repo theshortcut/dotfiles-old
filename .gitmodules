@@ -55,3 +55,6 @@
 [submodule "vimbundles/jslint.vim"]
 	path = vimbundles/jslint.vim
 	url = http://github.com/hallettj/jslint.vim.git
+[submodule "vimbundles/FuzzyFinder"]
+	path = vimbundles/FuzzyFinder
+	url = http://github.com/vim-scripts/FuzzyFinder.git

@@ -48,3 +48,7 @@ if has("autocmd")
 else
   set autoindent
 endif
+
+" Fuzzy Finder
+nnoremap <silent> <c-f>      :FufBuffer<CR>
+nnoremap <silent> <c-t>      :FufFile<CR>
