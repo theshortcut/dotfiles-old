@@ -52,9 +52,6 @@
 [submodule "vimbundles/vim-javascript"]
 	path = vimbundles/vim-javascript
 	url = http://github.com/pangloss/vim-javascript.git
-[submodule "vimbundles/jslint.vim"]
-	path = vimbundles/jslint.vim
-	url = http://github.com/hallettj/jslint.vim.git
 [submodule "vimbundles/FuzzyFinder"]
 	path = vimbundles/FuzzyFinder
 	url = http://github.com/vim-scripts/FuzzyFinder.git
@@ -64,3 +61,9 @@
 [submodule "vimbundles/vim-l9"]
 	path = vimbundles/vim-l9
 	url = http://github.com/clones/vim-l9.git
+[submodule "vimbundles/jshint.vim"]
+	path = vimbundles/jshint.vim
+	url = https://github.com/theshortcut/jshint.vim
+[submodule "vimbundles/jslint.vim"]
+	path = vimbundles/jslint.vim
+	url = http://github.com/hallettj/jslint.vim
