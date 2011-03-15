@@ -67,3 +67,6 @@
 [submodule "vimbundles/jslint.vim"]
 	path = vimbundles/jslint.vim
 	url = http://github.com/hallettj/jslint.vim
+[submodule "vimbundles/vim-jade"]
+	path = vimbundles/vim-jade
+	url = http://github.com/digitaltoad/vim-jade.git

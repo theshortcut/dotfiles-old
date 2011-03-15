@@ -31,8 +31,9 @@ alias scaffold='script/generate scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 
-# macports mysql
-alias restartmysql='sudo launchctl unload -w /Library/LaunchDaemons/org.macports.mysql5-devel.plist;sudo launchctl load -w /Library/LaunchDaemons/org.macports.mysql5-devel.plist'
+# brew stuff
+alias startmysql='cd /usr/local/Cellar/mysql/5.1.55 ; /usr/local/Cellar/mysql/5.1.55/bin/mysqld_safe &'
+alias startmongo='mongod run --config /usr/local/Cellar/mongodb/1.6.5-x86_64/mongod.conf'
 
 # personal
 alias syncmusic='rsync -Cavvz --progress --delete ~/Music/iTunes/iTunes\ Music/ clay@192.168.1.99:Music/'
@@ -40,6 +41,7 @@ alias archssh='ssh clay@192.168.1.99'
 alias archtorrent='sshfs clay@192.168.1.99:/mnt/torrents /Users/clay/Library/Application\ Support/MacFUSE/mounts/archtorrent -oauto_cache,reconnect,volname=ArchTorrents'
 alias cfdotcom='ssh cferris@claytonferris.com'
 alias archmount='sshfs clay@192.168.1.99:/home/clay /Users/clay/Library/Application\ Support/MacFUSE/mounts/arch -oauto_cache,reconnect,volname=Arch'
+alias microuno='ssh -i ~/.ssh/MicroUno.pem ec2-user@50.17.253.188'
 
 # commands starting with % for pasting from web
 alias %=' '
