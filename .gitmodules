@@ -70,3 +70,6 @@
 [submodule "vimbundles/vim-jade"]
 	path = vimbundles/vim-jade
 	url = http://github.com/digitaltoad/vim-jade.git
+[submodule "vimbundles/vim-colors-solarized"]
+	path = vimbundles/vim-colors-solarized
+	url = http://github.com/altercation/vim-colors-solarized.git

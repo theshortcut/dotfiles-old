@@ -9,7 +9,7 @@ set enc=utf-8
 set gfn=M+\ 2m\ light:h14
 set linespace=-4
 
-colorscheme inkpot
+colorscheme solarized
 
 :nmap  :set invnumber
  
