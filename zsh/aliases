@@ -32,8 +32,8 @@ alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 
 # brew stuff
-alias startmysql='cd /usr/local/Cellar/mysql/5.1.55 ; /usr/local/Cellar/mysql/5.1.55/bin/mysqld_safe &'
-alias startmongo='mongod run --config /usr/local/Cellar/mongodb/1.6.5-x86_64/mongod.conf'
+alias startmysql='mysqld_safe &'
+alias startmongo='mongod run --config /usr/local/Cellar/mongodb/1.8.1-x86_64/mongod.conf --fork --logpath /usr/local/var/mongodb/mongod.log'
 
 # personal
 alias syncmusic='rsync -Cavvz --progress --delete ~/Music/iTunes/iTunes\ Music/ clay@192.168.1.99:Music/'
