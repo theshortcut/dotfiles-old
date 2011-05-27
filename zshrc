@@ -38,3 +38,4 @@ alias cfdotcom='ssh cferris@claytonferris.com'
 alias archmount='sshfs clay@192.168.1.99:/home/clay /Users/clay/Library/Application\ Support/MacFUSE/mounts/arch -oauto_cache,reconnect,volname=Arch'
 alias microuno='ssh -i ~/.ssh/MicroUno.pem ec2-user@50.17.253.188'
 alias git-sub-pull='git submodule foreach git pull origin master'
+alias logmon="sudo tail -F \`sudo find /var/log/ -iname '*.log'\` /var/log/{dmesg,messages}.log /var/log/mongod | ccze"
