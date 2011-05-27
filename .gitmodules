@@ -82,3 +82,6 @@
 [submodule "vimbundles/snipmate.vim"]
 	path = vimbundles/snipmate.vim
 	url = http://github.com/msanders/snipmate.vim.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = http://github.com/robbyrussell/oh-my-zsh.git
