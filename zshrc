@@ -11,7 +11,7 @@ export ZSH_THEME="nanotech"
 # export CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-# export DISABLE_AUTO_UPDATE="true"
+export DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # export DISABLE_LS_COLORS="true"
@@ -24,6 +24,8 @@ export ZSH_THEME="nanotech"
 plugins=(git rails3 rvm brew npm)
 
 source $ZSH/oh-my-zsh.sh
+
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # Customize to your needs...
 
