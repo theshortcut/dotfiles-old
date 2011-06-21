@@ -6,8 +6,7 @@ set lines=65
 set columns=150
 set guioptions=egmrLt
 set enc=utf-8
-set gfn=M+\ 2m\ light:h14
-set linespace=-4
+set gfn=Consolas
 
 colorscheme solarized
 
