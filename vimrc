@@ -52,3 +52,6 @@ endif
 " Fuzzy Finder
 nnoremap <silent> <c-f>      :FufBuffer<CR>
 nnoremap <silent> <c-t>      :FufFile<CR>
+
+" Syntastic
+let g:syntastic_enable_signs=1
