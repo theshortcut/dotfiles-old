@@ -21,7 +21,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby rails3 rvm bundler gem brew node npm)
+plugins=(git ruby rails3 bundler gem brew node npm)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -29,9 +29,6 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # Customize to your needs...
-
-# Load RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Aliases
 alias syncmusic='rsync -Cavvz --progress --delete ~/Music/iTunes/iTunes\ Music/ clay@192.168.1.99:Music/'
@@ -42,3 +39,5 @@ alias archmount='sshfs clay@192.168.1.99:/home/clay /Users/clay/Library/Applicat
 alias microuno='ssh -i ~/.ssh/MicroUno.pem ec2-user@50.17.253.188'
 alias git-sub-pull='git submodule foreach git pull origin master'
 alias logmon="sudo tail -F \`sudo find /var/log/ -iname '*.log'\` /var/log/{dmesg,messages}.log /var/log/mongod | ccze"
+alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
