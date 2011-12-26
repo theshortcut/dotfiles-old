@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="gallois"
+export ZSH_THEME="theunraveler"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -21,7 +21,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby rails3 rvm gem bundler brew node npm powder)
+plugins=(git ruby rails3 gem bundler brew node npm powder)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -29,6 +29,9 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # Customize to your needs...
+
+# rbenv
+eval "$(rbenv init -)"
 
 # Aliases
 alias syncmusic='rsync -Cavvz --progress --delete ~/Music/iTunes/iTunes\ Music/ clay@192.168.1.99:Music/'

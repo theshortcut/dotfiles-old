@@ -85,3 +85,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = http://github.com/robbyrussell/oh-my-zsh.git
+[submodule "vimbundles/vim-eunuch"]
+	path = vimbundles/vim-eunuch
+	url = http://github.com/tpope/vim-eunuch.git
