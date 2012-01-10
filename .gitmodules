@@ -88,3 +88,6 @@
 [submodule "vimbundles/vim-eunuch"]
 	path = vimbundles/vim-eunuch
 	url = http://github.com/tpope/vim-eunuch.git
+[submodule "vimbundles/ctrlp.vim"]
+	path = vimbundles/ctrlp.vim
+	url = http://github.com/kien/ctrlp.vim
