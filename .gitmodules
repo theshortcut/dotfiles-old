@@ -91,3 +91,6 @@
 [submodule "vimbundles/ctrlp.vim"]
 	path = vimbundles/ctrlp.vim
 	url = http://github.com/kien/ctrlp.vim
+[submodule "vimbundles/vim-powerline"]
+	path = vimbundles/vim-powerline
+	url = http://github.com/Lokaltog/vim-powerline.git

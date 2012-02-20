@@ -6,9 +6,7 @@ set lines=65
 set columns=150
 set guioptions=egmrLt
 set enc=utf-8
-set gfn=Inconsolata:h15
-
-colorscheme solarized
+set gfn=Inconsolata-dz\ For\ Powerline:h12
 
 :nmap  :set invnumber
  
