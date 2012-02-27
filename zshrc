@@ -1,3 +1,5 @@
+# Make sure homebrewed stuff comes first in path
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
