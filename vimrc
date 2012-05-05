@@ -24,6 +24,8 @@ set shiftwidth=2
 set laststatus=2
 set expandtab " spaces ftw
 set vb t_vb= " disable visual bell
+set list! " show invisibles
+set listchars=tab:▸\ ,trail:·,eol:¬ " textmate style invisible chars
 colorscheme solarized
 
 if &t_Co > 2 || has("gui_running")
