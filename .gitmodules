@@ -94,3 +94,9 @@
 [submodule "vimbundles/vim-powerline"]
 	path = vimbundles/vim-powerline
 	url = http://github.com/Lokaltog/vim-powerline.git
+[submodule "vimbundles/vim-handlebars"]
+	path = vimbundles/vim-handlebars
+	url = https://github.com/nono/vim-handlebars.git
+[submodule "vimbundles/vim-soy"]
+	path = vimbundles/vim-soy
+	url = https://github.com/duganchen/vim-soy.git
