@@ -100,7 +100,8 @@ nnoremap <silent> <c-f>      :FufBuffer<CR>
 nnoremap <silent> <c-t>      :FufFile<CR>
 
 " Syntastic
-let g:syntastic_enable_signs=1
+let g:syntastic_enable_balloons=1
+let g:syntastic_check_on_open=1
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
