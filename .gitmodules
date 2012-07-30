@@ -100,3 +100,6 @@
 [submodule "vimbundles/vim-soy"]
 	path = vimbundles/vim-soy
 	url = https://github.com/duganchen/vim-soy.git
+[submodule "vimbundles/vim-snipmate"]
+	path = vimbundles/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
