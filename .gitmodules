@@ -103,3 +103,9 @@
 [submodule "vimbundles/vim-snipmate"]
 	path = vimbundles/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+[submodule "vimbundles/vim-addon-mw-utils"]
+	path = vimbundles/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vimbundles/tlib_vim"]
+	path = vimbundles/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
