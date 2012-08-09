@@ -32,9 +32,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-# rbenv
-eval "$(rbenv init -)"
-
 # Aliases
 alias syncmusic='rsync -Cavvz --progress --delete ~/Music/iTunes/iTunes\ Music/ clay@192.168.1.99:Music/'
 alias archssh='ssh clay@192.168.1.99'
