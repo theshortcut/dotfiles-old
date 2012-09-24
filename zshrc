@@ -1,5 +1,5 @@
 # Make sure homebrewed stuff comes first in path
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/share/python:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="theunraveler"
+export ZSH_THEME="powerline"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -23,14 +23,21 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby rails3 gem bundler brew node npm powder)
-
+plugins=(git ruby rails3 gem rvm bundler brew node npm powder)
 
 source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # Customize to your needs...
+
+# Python virtualenv stuff
+source /usr/local/share/python/virtualenvwrapper.sh
+
+# Make sure tmux uses login shell
+if [[ -z "$TMUX" ]]; then
+  tmux att 
+fi
 
 # Aliases
 alias syncmusic='rsync -Cavvz --progress --delete ~/Music/iTunes/iTunes\ Music/ clay@192.168.1.99:Music/'
