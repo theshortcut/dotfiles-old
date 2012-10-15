@@ -18,3 +18,5 @@ GREEN="\[\033[1;32m\]"
 RESET="\[\033[0m\]"
 export PS1="$GREEN\W$RESET\$ "
 export PS2='> '
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
