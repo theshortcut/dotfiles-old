@@ -41,6 +41,7 @@ if has("autocmd")
   augroup vimrcEx
     au!
     au FileType text setlocal textwidth=78
+    au BufNewFile,BufRead *.hm set filetype=javascript
     au BufNewFile,BufRead *.mxml set filetype=mxml
     au BufNewFile,BufRead *.as set filetype=actionscript
     au BufNewFile,BufRead *.mxml compiler flex
