@@ -32,7 +32,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # Python virtualenv stuff
-source /usr/local/share/python/virtualenvwrapper.sh
+# source /usr/local/share/python/virtualenvwrapper.sh
 
 # Make sure tmux uses login shell
 if [[ -z "$TMUX" ]]; then
