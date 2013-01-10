@@ -26,6 +26,7 @@ set expandtab " spaces ftw
 set vb t_vb= " disable visual bell
 set list! " show invisibles
 set listchars=tab:▸\ ,trail:·,eol:¬ " textmate style invisible chars
+set clipboard=unnamed
 colorscheme solarized
 
 if &t_Co > 2 || has("gui_running")
