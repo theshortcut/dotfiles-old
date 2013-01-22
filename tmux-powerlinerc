@@ -17,6 +17,10 @@
 	export TMUX_POWERLINE_SEG_BATTERY_NUM_HEARTS="5"
 # }
 
+# time.sh {
+  export TMUX_POWERLINE_SEG_TIME_FORMAT_DEFAULT="%H:%M"
+# }
+
 # mail_count_gmail.sh {
 	# Enter your Gmail username here WITH OUT @gmail.com.( OR @domain)
 	export TMUX_POWERLINE_SEG_MAILCOUNT_GMAIL_USERNAME=""
