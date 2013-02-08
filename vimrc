@@ -22,11 +22,11 @@ set softtabstop=2
 set tabstop=2
 set shiftwidth=2
 set laststatus=2
+set clipboard+=unnamed
 set expandtab " spaces ftw
 set vb t_vb= " disable visual bell
 set list! " show invisibles
 set listchars=tab:▸\ ,trail:·,eol:¬ " textmate style invisible chars
-set clipboard=unnamed
 colorscheme solarized
 
 if &t_Co > 2 || has("gui_running")

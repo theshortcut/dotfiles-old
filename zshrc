@@ -31,14 +31,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-# Python virtualenv stuff
-# source /usr/local/share/python/virtualenvwrapper.sh
-
-# Make sure tmux uses login shell
-if [[ -z "$TMUX" ]]; then
-  tmux att 
-fi
-
 # Aliases
 alias syncmusic='rsync -Cavvz --progress --delete ~/Music/iTunes/iTunes\ Music/ clay@192.168.1.99:Music/'
 alias archssh='ssh clay@192.168.1.99'
