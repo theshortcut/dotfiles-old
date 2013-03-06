@@ -118,3 +118,6 @@
 [submodule "vimbundles/YouCompleteMe"]
 	path = vimbundles/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "vimbundles/vim-gitgutter"]
+	path = vimbundles/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
