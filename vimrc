@@ -104,6 +104,8 @@ nnoremap <silent> <c-t>      :FufFile<CR>
 " Syntastic
 let g:syntastic_enable_balloons=1
 let g:syntastic_check_on_open=1
+let g:syntastic_javascript_jshint_conf="~/.jshintrc"
+let g:syntastic_javascript_syntax_checker="jshint"
 
 " Powerline
 let g:Powerline_symbols = 'fancy'

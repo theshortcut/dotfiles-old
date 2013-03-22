@@ -121,3 +121,6 @@
 [submodule "vimbundles/vim-gitgutter"]
 	path = vimbundles/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vimbundles/vim-easymotion"]
+	path = vimbundles/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion
