@@ -1,0 +1,23 @@
+[user]
+	name = Clayton Ferris
+	email = cferris@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[push]
+	default = current
+[alias]
+	st = status -sb
+	ci = commit
+	ready = rebase -i @{u}
+	lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	standup = !git log --since yesterday --author `git config user.email` --pretty=short
+	purr = pull --rebase
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
