@@ -6,7 +6,7 @@ set lines=65
 set columns=150
 set guioptions=egmrLt
 set enc=utf-8
-set gfn=Envy\ Code\ R:h14
+set gfn=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h14
 
 :nmap  :set invnumber
  

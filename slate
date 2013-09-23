@@ -35,12 +35,14 @@ bind esc:cmd hint
 # Layouts
 layout 1monitor  'Sparrow':REPEAT       corner top-left     resize:(screenSizeX/3)*2;screenSizeY     ${mon-retina}
 layout 1monitor  'Mail':REPEAT          corner top-left     resize:(screenSizeX/3)*2;screenSizeY     ${mon-retina}
+layout 1monitor  'Airmail':REPEAT       corner top-left     resize:(screenSizeX/3)*2;screenSizeY     ${mon-retina}
 layout 1monitor  'Tweetbot':REPEAT      corner top-right    resize:(screenSizeX/3);(screenSizeY/3)*2 ${mon-retina}
 layout 1monitor  'Messages':REPEAT      corner bottom-right resize:(screenSizeX/3);screenSizeY/2     ${mon-retina}
 layout 1monitor  'Google Chrome':REPEAT corner top-left     resize:screenSizeX;screenSizeY           ${mon-retina}
 
 layout 2monitors 'Sparrow':REPEAT       corner top-left     resize:(screenSizeX/3)*2;screenSizeY     ${mon-retina}
 layout 2monitors 'Mail':REPEAT          corner top-left     resize:(screenSizeX/3)*2;screenSizeY     ${mon-retina}
+layout 2monitors 'Airmail':REPEAT       corner top-left     resize:(screenSizeX/3)*2;screenSizeY     ${mon-retina}
 layout 2monitors 'Tweetbot':REPEAT      corner top-right    resize:(screenSizeX/3);(screenSizeY/3)*2 ${mon-retina}
 layout 2monitors 'Messages':REPEAT      corner bottom-right resize:(screenSizeX/3);screenSizeY/2     ${mon-retina}
 layout 2monitors 'Google Chrome':REPEAT corner top-left     resize:screenSizeX;screenSizeY           ${mon-retina}
