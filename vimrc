@@ -110,6 +110,9 @@ let g:syntastic_javascript_syntax_checker="jshint"
 " Powerline
 let g:Powerline_symbols = 'fancy'
 
+" No netrwhist files
+let g:netrw_dirhistmax = 0
+
 au InsertEnter * call InsertStatuslineColor(v:insertmode)
 au InsertLeave * hi StatColor guibg=#95e454 guifg=black ctermbg=lightgreen ctermfg=black
 
