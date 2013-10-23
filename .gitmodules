@@ -124,3 +124,6 @@
 [submodule "vimbundles/vim-easymotion"]
 	path = vimbundles/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion
+[submodule "vimbundles/vim-multiple-cursors"]
+	path = vimbundles/vim-multiple-cursors
+	url = http://github.com/terryma/vim-multiple-cursors.git
