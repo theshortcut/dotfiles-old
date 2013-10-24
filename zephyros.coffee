@@ -24,7 +24,7 @@ windowLayout =
     position: x: 0, y: 0
     mainScreen: true
 
-bind '1', ['alt', 'cmd'], -> layoutWindows()
+bind '1', ['alt', 'cmd'], -> layoutAllWindows()
 
 bind 'i', ['ctrl', 'alt', 'cmd'], ->
   window = api.focusedWindow()
@@ -34,13 +34,15 @@ bind 'i', ['ctrl', 'alt', 'cmd'], ->
     Position: #{_.values(window.topLeft()).join(', ')}
   """
 
-listen 'screens_changed', -> layoutWindows()
+listen 'screens_changed', -> layoutAllWindows()
+
+listen 'app_launched', (app) -> layoutAppWindows(app)
 
 isMainScreen = (screen) ->
   return _.isEqual screen.frameIncludingDockAndMenu(), api.allScreens()[0].frameIncludingDockAndMenu()
 
-layoutWindows = ->
-  _.each api.visibleWindows(), (window) ->
+layoutWindows = (windows) ->
+  _.each windows, (window) ->
     layout = windowLayout[window.app().title()]
     return unless window.isNormalWindow() and layout?
     screen = if layout.mainScreen then _.first api.allScreens() else _.last api.allScreens()
@@ -49,3 +51,7 @@ layoutWindows = ->
       h: Math.floor screen.frameWithoutDockOrMenu().h * layout.size.height
       x: Math.floor screen.frameWithoutDockOrMenu().w * layout.position.x + screen.frameWithoutDockOrMenu().x
       y: Math.floor screen.frameWithoutDockOrMenu().h * layout.position.y + screen.frameWithoutDockOrMenu().y
+
+layoutAllWindows = -> layoutWindows api.visibleWindows()
+
+layoutAppWindows = (app) -> layoutWindows app.visibleWindows()
