@@ -98,8 +98,9 @@ function! InsertStatuslineColor(mode)
 endfunction
 
 " Fuzzy Finder
-nnoremap <silent> <c-f>      :FufBuffer<CR>
-nnoremap <silent> <c-t>      :FufFile<CR>
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](node_modules|vendors|build|\.git)$',
+  \ }
 
 " Syntastic
 let g:syntastic_enable_balloons=1

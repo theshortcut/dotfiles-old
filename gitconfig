@@ -14,6 +14,7 @@
     suri = submodule update --init --recursive
     sui = submodule update --init
     su = submodule update
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)%Creset' --abbrev-commit
 [branch]
     autosetupmerge = true
 [gui]
@@ -47,7 +48,6 @@
 	st = status -sb
 	ci = commit
 	ready = rebase -i @{u}
-	lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	standup = !git log --since yesterday --author `git config user.email` --pretty=short
 	purr = pull --rebase
 	switch = !legit switch \"$@\"
