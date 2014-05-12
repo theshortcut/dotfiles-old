@@ -108,6 +108,47 @@ let g:syntastic_check_on_open=1
 let g:syntastic_javascript_jshint_conf="~/.jshintrc"
 let g:syntastic_javascript_syntax_checker="jshint"
 
+" UltiSnips
+function! g:UltiSnips_Complete()
+  call UltiSnips#ExpandSnippet()
+  if g:ulti_expand_res == 0
+    if pumvisible()
+      return "\<C-n>"
+    else
+      call UltiSnips_JumpForwards()
+      if g:ulti_jump_forwards_res == 0
+        return "\<TAB>"
+      endif
+    endif
+  endif
+  return ""
+endfunction
+
+au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+let g:UltiSnipsExpandTrigger="<c-l>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-h>"
+
+function! g:JInYCM()
+  if pumvisible()
+    return "\<C-n>"
+  else
+    return "\<c-j>"
+  endif
+endfunction
+
+function! g:KInYCM()
+  if pumvisible()
+    return "\<C-p>"
+  else
+    return "\<c-k>"
+  endif
+endfunction
+
+inoremap <c-j> <c-r>=g:JInYCM()<cr>
+au BufEnter,BufRead * exec "inoremap <silent> " . g:UltiSnipsJumpBackwardTrigger . " <C-R>=g:KInYCM()<cr>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
+
 " Powerline
 let g:Powerline_symbols = 'fancy'
 
