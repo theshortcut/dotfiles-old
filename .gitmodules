@@ -133,3 +133,6 @@
 [submodule "vimbundles/vim-snippets"]
 	path = vimbundles/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "powerline"]
+	path = powerline
+	url = https://github.com/Lokaltog/powerline.git

@@ -1,0 +1,51 @@
+{
+  "default_module": "powerline.segments.common",
+  "segment_data": {
+    "uptime": {
+      "before": "⇑  "
+    }
+  },
+  "segments": {
+    "right": [
+      {
+        "name": "now_playing",
+        "args": {
+          "player": "itunes"
+        }
+      },
+      {
+        "name": "weather",
+        "args": {
+          "unit": "F",
+          "icons": {
+            "day":           "☀️ ",
+            "blustery":      "💨 ",
+            "rainy":         "☔️ ",
+            "cloudy":        "☁️ ",
+            "snowy":         "❄️ ",
+            "stormy":        "⚡️ ",
+            "foggy":         "⛅️ ",
+            "sunny":         "☀️ ",
+            "night":         "🌘 ",
+            "windy":         "💨 ",
+            "not_available": "❓ ",
+            "unknown":       "⁉️ "
+          }
+        }
+      },
+      {
+        "name": "battery"
+      },
+      {
+        "name": "date",
+        "args": {
+          "format": "%H:%M",
+          "istime": true
+        }
+      },
+      {
+        "name": "hostname"
+      }
+    ]
+  }
+}
