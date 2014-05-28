@@ -32,13 +32,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # Aliases
-alias syncmusic='rsync -Cavvz --progress --delete ~/Music/iTunes/iTunes\ Music/ clay@192.168.1.99:Music/'
-alias archssh='ssh clay@192.168.1.99'
-alias archtorrent='sshfs clay@192.168.1.99:/mnt/torrents /Users/clay/Library/Application\ Support/MacFUSE/mounts/archtorrent -oauto_cache,reconnect,volname=ArchTorrents'
-alias cfdotcom='ssh cferris@claytonferris.com'
-alias archmount='sshfs clay@192.168.1.99:/home/clay /Users/clay/Library/Application\ Support/MacFUSE/mounts/arch -oauto_cache,reconnect,volname=Arch'
-alias microuno='ssh -i ~/.ssh/MicroUno.pem ec2-user@50.17.253.188'
 alias git-sub-pull='git submodule foreach git pull origin master'
+alias gitjk="history 10 | tail -r | gitjk_cmd"
 alias logmon="sudo tail -F \`sudo find /var/log/ -iname '*.log'\` /usr/local/var/log/redis.log /usr/local/var/log/mongodb/output.log"
-alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
