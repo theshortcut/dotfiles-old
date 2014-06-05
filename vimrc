@@ -162,6 +162,7 @@ au BufEnter,BufRead * exec "inoremap <silent> " . g:UltiSnipsJumpBackwardTrigger
 let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 
 " Powerline
+set rtp+=~/.powerline/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
 
 " No netrwhist files
