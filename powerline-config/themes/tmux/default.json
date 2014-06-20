@@ -8,15 +8,11 @@
   "segments": {
     "right": [
       {
-        "name": "now_playing",
-        "args": {
-          "player": "itunes"
-        }
-      },
-      {
         "name": "weather",
         "args": {
           "unit": "F",
+          "temp_coldest": 40,
+          "temp_hottest": 90,
           "icons": {
             "day":           "☀️ ",
             "blustery":      "💨 ",
@@ -34,7 +30,10 @@
         }
       },
       {
-        "name": "battery"
+        "name": "battery",
+        "args": {
+          "gamify": true
+        }
       },
       {
         "name": "date",
