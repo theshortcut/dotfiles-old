@@ -171,6 +171,19 @@ let g:netrw_dirhistmax = 0
 au InsertEnter * call InsertStatuslineColor(v:insertmode)
 au InsertLeave * hi StatColor guibg=#95e454 guifg=black ctermbg=lightgreen ctermfg=black
 
+" Easymotion
+let g:EasyMotion_smartcase = 1
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+nmap s <Plug>(easymotion-s)
+nmap t <Plug>(easymotion-t)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+
 "" FocusMode
 function! ToggleFocusMode()
   if (&foldcolumn != 12)
