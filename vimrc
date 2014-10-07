@@ -27,7 +27,7 @@ set expandtab " spaces ftw
 set vb t_vb= " disable visual bell
 set list! " show invisibles
 set listchars=tab:▸\ ,trail:·,eol:¬ " textmate style invisible chars
-colorscheme solarized
+colorscheme gotham
 
 if &t_Co > 2 || has("gui_running")
   syntax on
@@ -117,8 +117,8 @@ let g:ctrlp_custom_ignore = {
 " Syntastic
 let g:syntastic_enable_balloons=1
 let g:syntastic_check_on_open=1
-let g:syntastic_javascript_jshint_conf="~/.jshintrc"
 let g:syntastic_javascript_syntax_checker="jshint"
+let g:syntastic_javascript_jshint_args = '--config /Users/clay/.jshintrc'
 
 " UltiSnips
 function! g:UltiSnips_Complete()
@@ -199,7 +199,7 @@ function! ToggleFocusMode()
     set numberwidth=4
     set foldcolumn=0
     set ruler
-    colorscheme solarized "re-call your colorscheme
+    colorscheme gotham "re-call your colorscheme
   endif
 endfunc
 nnoremap <F1> :call ToggleFocusMode()<cr>

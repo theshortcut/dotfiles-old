@@ -1,14 +1,8 @@
 {
-  "default_module": "powerline.segments.common",
-  "segment_data": {
-    "uptime": {
-      "before": "⇑  "
-    }
-  },
   "segments": {
     "right": [
       {
-        "name": "weather",
+        "function": "powerline.segments.common.wthr.weather",
         "args": {
           "unit": "F",
           "temp_coldest": 40,
@@ -30,20 +24,20 @@
         }
       },
       {
-        "name": "battery",
+        "function": "powerline.segments.common.bat.battery",
         "args": {
           "gamify": true
         }
       },
       {
-        "name": "date",
+        "function": "powerline.segments.common.time.date",
         "args": {
-          "format": " %H:%M",
+          "format": "%H:%M",
           "istime": true
         }
       },
       {
-        "name": "hostname"
+        "function": "powerline.segments.common.net.hostname"
       }
     ]
   }

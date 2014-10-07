@@ -136,3 +136,6 @@
 [submodule "powerline"]
 	path = powerline
 	url = https://github.com/Lokaltog/powerline.git
+[submodule "vimbundles/vim-gotham"]
+	path = vimbundles/vim-gotham
+	url = https://github.com/whatyouhide/vim-gotham.git
