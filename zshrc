@@ -31,7 +31,14 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+export ANDROID_HOME=`find /usr/local/Cellar/android-sdk/*  -maxdepth 0 -print 2> /dev/null | tail -n 1`
+
+# jenv support
+export PATH="$HOME/.jenv/bin:$PATH"
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
 # Aliases
 alias git-sub-pull='git submodule foreach git pull origin master'
 alias gitjk="history 10 | tail -r | gitjk_cmd"
 alias logmon="sudo tail -F \`sudo find /var/log/ -iname '*.log'\` /usr/local/var/log/redis.log /usr/local/var/log/mongodb/output.log"
+
