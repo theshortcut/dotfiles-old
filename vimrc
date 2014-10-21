@@ -114,6 +114,9 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](node_modules|vendors|build|\.git)$',
   \ }
 
+" Eclim & YCM happiness
+let g:EclimCompletionMethod = 'omnifunc'
+
 " Syntastic
 let g:syntastic_enable_balloons=1
 let g:syntastic_check_on_open=1
