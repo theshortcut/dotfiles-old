@@ -27,7 +27,7 @@ set expandtab " spaces ftw
 set vb t_vb= " disable visual bell
 set list! " show invisibles
 set listchars=tab:▸\ ,trail:·,eol:¬ " textmate style invisible chars
-colorscheme gotham
+colorscheme solarized
 
 if &t_Co > 2 || has("gui_running")
   syntax on
@@ -202,7 +202,7 @@ function! ToggleFocusMode()
     set numberwidth=4
     set foldcolumn=0
     set ruler
-    colorscheme gotham "re-call your colorscheme
+    colorscheme solarized "re-call your colorscheme
   endif
 endfunc
 nnoremap <F1> :call ToggleFocusMode()<cr>

@@ -186,9 +186,6 @@
 
     "MISC": "----------------------",
     "floating": [
-      "com.tapbots.TweetbotMac",
-      "com.apple.iChat",
-      "it.bloop.airmail"
     ],
     "float-small-windows": true,
     "mouse-follows-focus": true

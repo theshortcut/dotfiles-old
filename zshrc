@@ -2,6 +2,7 @@
 export PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
+export TERM=screen-256color
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
