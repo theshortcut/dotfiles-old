@@ -1,5 +1,5 @@
 # Make sure homebrewed stuff comes first in path
-export PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 export TERM=screen-256color
