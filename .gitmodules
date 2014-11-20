@@ -139,6 +139,3 @@
 [submodule "vimbundles/vim-gotham"]
 	path = vimbundles/vim-gotham
 	url = https://github.com/whatyouhide/vim-gotham.git
-[submodule "emacs.d"]
-	path = emacs.d
-	url = http://github.com/syl20bnr/spacemacs

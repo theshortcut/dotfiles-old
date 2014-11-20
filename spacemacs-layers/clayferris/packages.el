@@ -1,4 +1,0 @@
-(defvar clayferris-packages
-  '(
-    ag
-    ))
