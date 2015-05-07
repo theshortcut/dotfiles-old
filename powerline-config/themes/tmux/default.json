@@ -2,28 +2,6 @@
   "segments": {
     "right": [
       {
-        "function": "powerline.segments.common.wthr.weather",
-        "args": {
-          "unit": "F",
-          "temp_coldest": 40,
-          "temp_hottest": 90,
-          "icons": {
-            "day":           "☀️ ",
-            "blustery":      "💨 ",
-            "rainy":         "☔️ ",
-            "cloudy":        "☁️ ",
-            "snowy":         "❄️ ",
-            "stormy":        "⚡️ ",
-            "foggy":         "⛅️ ",
-            "sunny":         "☀️ ",
-            "night":         "🌘 ",
-            "windy":         "💨 ",
-            "not_available": "❓ ",
-            "unknown":       "⁉️ "
-          }
-        }
-      },
-      {
         "function": "powerline.segments.common.bat.battery",
         "args": {
           "gamify": true
