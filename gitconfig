@@ -22,6 +22,7 @@
     matchtrackingbranch = true
     pruneduringfetch = true
     fontui = -family Tahoma -size 13 -weight normal -slant roman -underline 0 -overstrike 0
+	recentrepo = /Users/clay/src/spingo/add-event-ui
 [color]
     status = auto
     branch = auto

@@ -1,5 +1,5 @@
 # Make sure homebrewed stuff comes first in path
-export PATH="$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/.cabal/bin:$HOME/src/nim/bin:$HOME/.nimble/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 export TERM=screen-256color
@@ -47,5 +47,6 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 alias git-sub-pull='git submodule foreach git pull origin master'
 alias gitjk="history 10 | tail -r | gitjk_cmd"
 alias logmon="sudo tail -F \`sudo find /var/log/ -iname '*.log'\` /usr/local/var/log/redis.log /usr/local/var/log/mongodb/output.log"
+alias grulp="gulp"
 alias fuck='$(thefuck $(fc -ln -1))'
 
